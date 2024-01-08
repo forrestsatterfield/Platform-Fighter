@@ -1,0 +1,31 @@
+Platform Fighter Engine Full Release 1.4.2 - Patch Notes
+(Last Modified: 10/16/2023)
+
+Attacks
+- Added Toon Link's Down Special.
+	- This move spawns a bomb item that the user holds.
+	- The bomb explodes after a certain amount of time, or if it is thrown.
+	- If the bomb hits an opponent, the explosion won't damage the player who threw the bomb.
+- Added Diddy Kong's Down Special.
+	- This move throws a banana peel item behind the user.
+	- If the banana peel hits an opponent in the air, it deals weak damage and knockback.
+	- If the banana peel hits a grounded opponent, they instantly trip.
+	- Other players can pick up and throw the banana.
+- Added Pikachu's Up Special.
+	- This move allows the user to quickly move in any direction.
+	- You can optionally move a second time if you tilt the control stick in a different direction.
+- General balance adjustments.
+
+Fixes
+- "stick_flick_cooldown" is now 2 frames by default, which should fix an issue with stick flicks being registered multiple times.
+- "basic_item_throw" and "scalar_item_throw" no longer crash if the item is destroyed before the throw happens.
+- The tumble state now uses "hitstun_grav" instead of the normal gravity value.
+
+Extra
+- The default max palette height is now 48 colors.
+- The game now alerts you if you try to use a palette sprite that is larger than the max size.
+- "pick_up_item" now has an argument for specifying the id of one item to be picked up.
+- "hitbox_group_whitelist_id" can now be used on the "hitbox_group_array" of projectiles, if you set the "group_number" argument to "-1".
+- Adjusted the volume of some sound effects.
+- A small amount of folder reorganization.
+- Fixed some comments.
